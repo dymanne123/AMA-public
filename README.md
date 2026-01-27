@@ -9,10 +9,18 @@ This pipeline tests whether an AI memory system properly retains information fro
 ## Project Structure
 
 ├── src/
+
 │ ├── challenger.py # QA pair generation
+
 │ ├── evaluator.py # Memory answering and quality evaluation
+
 │ ├── adapter.py # Update strategy generation
+
 │ └── AMA_pipeline.py # Main pipeline orchestration
+
 ├── data/
+
 │ └── locomo10.json # Sample dialogue data
+
 └── README.md
+

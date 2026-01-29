@@ -65,27 +65,6 @@ Return as JSON:
     ]
 }}
 
-Example:
-If the dialogue includes:
----
-Jon: I really like to destress by dancing.
-Jon:
-Gina: Me too! Dancing always helps me relax.
-Gina:
----
-
-You should generate:
-{{
-    "qa_pairs": [
-        {{
-            "question": "How do Jon and Gina both like to destress?",
-            "answer": "by dancing",
-            "category": "preference",
-            "focus_area": "tests shared preferences and coping strategies"
-        }}
-    ]
-}}
-
 Only return JSON."""
         print(prompt)
         

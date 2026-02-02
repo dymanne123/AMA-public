@@ -239,7 +239,7 @@ The framework follows this workflow:
 1. **Build Memory**: Extract and store key information from dialogue
 2. **Generate QA Pairs**: Create test questions from the dialogue
 3. **Evaluate**: Test memory retrieval accuracy for each question
-4. **Reconstruct** (if needed): If pass rate < 70%:
+4. **Reconstruct** (if needed): If pass rate < 90%:
    - Filter dialogue to focus on failed questions
    - Rebuild memory with corrections
    - Add correction memories directly
@@ -272,10 +272,10 @@ memory = SimpleMemorySystem(
 
 ### Evaluation Threshold
 
-Default pass rate threshold is 70%. Modify in `plugin/memory_evaluator.py`:
+Default pass rate threshold is 90%. Modify in `plugin/memory_evaluator.py`:
 
 ```python
-PASS_RATE_THRESHOLD = 70.0
+PASS_RATE_THRESHOLD = 90.0
 ```
 
 ### Similarity Threshold
